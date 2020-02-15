@@ -1,25 +1,82 @@
 #include <stdio.h>
+int main ()
 
-int main(){
+{
+
+	int a, x, y, op;
 	
-	printf("\t\t\tDivisiones :)\n");
-	int pv, sv, op;
-	
-	if(sv==0)
+	printf ("\t\tSeleccione una opcion:  \n 1)Suma \n 2) Resta \n 3) Multiplicacion \n 4) Divicion \n");
+	scanf ("%d",&a);
+
+
+
+
+	if ( a==1 )
 	{
-    printf("Syntax Error");	
+		printf("Ingresa el primer valor: ");
+		scanf ("%d", &x);
+
+		printf("Ingresa el segundo valor: ");
+		scanf ("%d", &y);
+
+		op=x+y;
+
+			printf ("El resultado es:  %d\n", op );
+
 	}
-	else 
+	else
 	{
-		printf("Ingresa el numerador\n");
-	scanf("%d", &pv);
+		
+		if (a==2)
+		{
+			printf("Ingresa el primer valor: ");
+			scanf ("%d", &x);
+
+			printf("Ingresa el segundo valor: ");
+			scanf ("%d", &y);
 	
-	printf("Ingresa el denominador\n");
-	scanf("%d", &sv);
+			op=x-y;
+
+				printf ("El resultado es:  %d\n", op);
+		}
+		else 
+
+			if (a==3)
+			{
+
+			printf("Ingresa el primer valor: ");
+			scanf ("%d", &x);
+  
+			printf("Ingresa el segundo valor: ");
+			scanf ("%d", &y);
 	
-	op=pv/sv;
+			op=x*y;
+
+				printf ("El resultado es:  %d\n", op);
+			}
+
+			else
+			{
+				if (a==4)
+				{
+
+			printf("Ingresa el numerador: ");
+			scanf ("%d", &x);
+
+			printf("Ingresa el denominador: ");
+			scanf ("%d", &y);
 	
-		printf("El resultado es: %d", op);
-	    }
+			op=x/y;
+			
+			    if(y==0){
+			    	printf("La operacion no es valida\n");
+			    }
+			    else{
+				printf ("El resultado es:  %d\n", op);
+				}
+	        }
+    }
+}
+
 	return 0;
 }
