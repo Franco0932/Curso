@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(){
+	
+	printf("\t\t\tDivisiones :)\n");
+	int pv, sv, op;
+	
+	if(sv==0)
+	{
+    printf("Syntax Error");	
+	}
+	else 
+	{
+		printf("Ingresa el numerador\n");
+	scanf("%d", &pv);
+	
+	printf("Ingresa el denominador\n");
+	scanf("%d", &sv);
+	
+	op=pv/sv;
+	
+		printf("El resultado es: %d", op);
+	    }
+	return 0;
+}
