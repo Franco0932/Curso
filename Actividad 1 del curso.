@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(){
+//Imprime la palabra entre comillas en la pantalla.
 	printf("Hola mundo.");
   // 1er programa :)
 	return 0;
