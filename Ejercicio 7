@@ -1,0 +1,23 @@
+#include <stdio.h>
+ 
+int main()
+{
+  int a, b, fact = 1;
+  
+  //Apuntador a archivo
+  FILE *n;
+  n=fopen("ResultadoFact.txt","w");
+ 
+  printf("Ingresa un numero cualquiera para calcular su factorial: \n");
+  scanf("%d", &b);
+ 
+  for (a = 1; a <= b; a++){
+    fprintf(n,"%d! * %d = ", b, fact);
+    fact = fact * a;
+    fprintf(n,"%d\n" ,fact);
+}
+
+  printf("El resultado del factorial  %d! = %d\n", b, fact);
+  fclose(n);
+  return 0;
+} 
