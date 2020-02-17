@@ -1,0 +1,110 @@
+#include <stdio.h>
+
+int factorial(int a)
+{
+	int i,j;
+	j=1;
+	if (a==0){
+		printf("El factorial de 0 es 0 \n");
+	}else if(x==1){
+		printf("El %d! = 1\n", a);
+	}else{
+		printf("El resultado del factorial  %d! = %d\n", a);")
+	for (i = 1; i <= x; i++)
+	printf("(%d)",i)
+	j = i * j;
+	}
+	return r;
+}
+
+int main ()
+
+{
+
+	int a, x, y, op;
+	
+	
+	printf ("\t\tSeleccione una opcion:  \n 1Suma \n 2)Resta \n 3)Multiplicacion \n 4)Division \n 5)Factorial \n");
+	scanf ("%d",&a);
+
+
+
+
+	if ( a==1 )
+	{
+		printf("Ingresa el primer valor: ");
+		scanf ("%d", &x);
+
+		printf("Ingresa el segundo valor: ");
+		scanf ("%d", &y);
+
+		op=x+y;
+
+			printf ("El resultado es:  %d\n", op );
+
+	}
+	else
+	{
+		
+		if (a==2)
+		{
+			printf("Ingresa el primer valor: ");
+			scanf ("%d", &x);
+
+			printf("Ingresa el segundo valor: ");
+			scanf ("%d", &y);
+	
+			op=x-y;
+
+				printf ("El resultado es:  %d\n", op);
+		}
+		else 
+
+			if (a==3)
+			{
+
+			printf("Ingresa el primer valor: ");
+			scanf ("%d", &x);
+  
+			printf("Ingresa el segundo valor: ");
+			scanf ("%d", &y);
+	
+			op=x*y;
+
+				printf ("El resultado es:  %d\n", op);
+			}
+
+			else
+			{
+				if (a==4)
+				{
+
+			printf("Ingresa el numerador: ");
+			scanf ("%d", &x);
+
+			printf("Ingresa el denominador: ");
+			scanf ("%d", &y);
+	
+			op=x/y;
+			
+			    if(y==0){
+			    	printf("La operacion no es valida\n");
+			    }
+			    else{
+				printf ("El resultado es:  %d\n", op);
+				}
+	        }
+    }
+    if(a==5){
+    	int x,r
+    	printf("Ingresa un numero entero para calcular su factorial\n");
+  scanf("%d", &x);
+    
+    r=factorial(x);
+    
+  printf("El resultado del factorial  %d! = %d\n", r);
+    }
+}
+
+	return 0;
+}
