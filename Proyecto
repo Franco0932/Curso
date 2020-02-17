@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+void  menu();
+
+
+
+int main(){
+        int op,n,pre;
+        while(op!=4){
+                menu();
+                switch(op){
+                        case 1:
+                        	printf("\t\t\t\tComida!!\n");
+                        	printf("Eliga una opcion:\n");
+                        	scanf("%d", &n);
+                        	if(n==1){
+							printf("1.Sopa $20\n ");
+							}else if (n==2){
+							printf("2.Pechuga enpanizada $35\n");
+						}else if (n==3){
+							printf("3.Ensalada con pollo $45\n ");
+						}
+                                break;
+                        case 2:
+                        	printf("\t\t\t\tBebidas!!\n");
+                        	printf("Eliga una opcion:\n");
+							printf("1.Coca-Cola $15\n ");
+							printf("2.Agua del dia $10\n");
+							printf("3.Jugo de naranja $13\n ");
+                                break;
+                        case 3:
+                        	printf("\t\t\t\tPostres!!\n");
+                        	printf("Eliga una opcion:\n");
+							printf("1.Pay de limon $15\n ");
+							printf("2.Fresas con crema $20\n");
+							printf("3.Crepas $35\n ");
+						        break;                                                                                                                                          
+                        case 4:
+                                printf("Adios, hasta la proxima ;)\n");
+                                break;                                           
+								default:
+                                printf("Opción no valida\n");
+                }
+        }
+return 0;
+}
+void menu(){
+	    int op;
+	    printf("\t\t\t\t Restaurante FI!!!\n");
+        printf("Que ordenara?:\n");
+        printf("1.Comida\n 2.Bebida\n 3.Postre\n 4.Adios\n");
+        printf("Opcion: \n"); fflush(stdin);
+        op=getch();
+}
+
